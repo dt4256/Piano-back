@@ -1,0 +1,17 @@
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\bin\Debug\net8.0-windows\Piano test.exe
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\bin\Debug\net8.0-windows\Piano test.deps.json
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\bin\Debug\net8.0-windows\Piano test.runtimeconfig.json
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\bin\Debug\net8.0-windows\Piano test.dll
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\bin\Debug\net8.0-windows\Piano test.pdb
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano_test.Form1.resources
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.GenerateResource.cache
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfoInputs.cache
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfo.cs
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.CoreCompileInputs.cache
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.sourcelink.json
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.dll
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\refint\Piano test.dll
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
+C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll
