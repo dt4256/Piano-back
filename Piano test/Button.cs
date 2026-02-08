@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using Melanchall.DryWetMidi.Multimedia;
+using Melanchall.DryWetMidi.Core; 
 
 namespace Piano_test
 {
@@ -75,6 +77,18 @@ namespace Piano_test
         {
             pitchband = Map(x-this.x, 0, width, 0, 16383);
         }
-        
+        public void Send_MIDI(BTN button_pr) 
+        {
+            var virtualPort = OutputDevice.GetByName("DawPort");
+            if (virtualPort != null)
+            {
+                
+                var bendEvent = new PitchBendEvent((ushort)button_pr.Pitchband);
+                virtualPort.SendEvent(bendEvent);
+                virtualPort.Dispose(); // закрываем порт
+                
+            }
+
+        }
     }
 }

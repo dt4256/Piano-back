@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ihrom\\OneDrive\\Desktop\\chess\\Chess\\Piano test\\Piano test\\Piano test.csproj": {}
+    "C:\\Users\\dt4\\Downloads\\Piano-back\\Piano test\\Piano test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ihrom\\OneDrive\\Desktop\\chess\\Chess\\Piano test\\Piano test\\Piano test.csproj": {
+    "C:\\Users\\dt4\\Downloads\\Piano-back\\Piano test\\Piano test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ihrom\\OneDrive\\Desktop\\chess\\Chess\\Piano test\\Piano test\\Piano test.csproj",
+        "projectUniqueName": "C:\\Users\\dt4\\Downloads\\Piano-back\\Piano test\\Piano test.csproj",
         "projectName": "Piano test",
-        "projectPath": "C:\\Users\\ihrom\\OneDrive\\Desktop\\chess\\Chess\\Piano test\\Piano test\\Piano test.csproj",
-        "packagesPath": "C:\\Users\\ihrom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ihrom\\OneDrive\\Desktop\\chess\\Chess\\Piano test\\Piano test\\obj\\",
+        "projectPath": "C:\\Users\\dt4\\Downloads\\Piano-back\\Piano test\\Piano test.csproj",
+        "packagesPath": "C:\\Users\\dt4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dt4\\Downloads\\Piano-back\\Piano test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "G:\\vs2\\Создать папку (2)\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ihrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dt4\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,11 +45,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Melanchall.DryWetMidi": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -69,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

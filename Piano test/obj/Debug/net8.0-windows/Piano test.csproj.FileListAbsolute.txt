@@ -15,3 +15,81 @@ C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8
 C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
 C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
 C:\Users\ihrom\OneDrive\Desktop\chess\Chess\Piano test\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.exe
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.deps.json
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.runtimeconfig.json
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.dll
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.pdb
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano_test.Form1.resources
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.GenerateResource.cache
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfo.cs
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.sourcelink.json
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.dll
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\refint\Piano test.dll
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
+C:\Users\1\Desktop\Новая папка (2)\Piano-back\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.exe
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.deps.json
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.runtimeconfig.json
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.dll
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.pdb
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano_test.Form1.resources
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.GenerateResource.cache
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfo.cs
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.sourcelink.json
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.dll
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\refint\Piano test.dll
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
+C:\Users\1\Desktop\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano_test.Form1.resources
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.GenerateResource.cache
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfoInputs.cache
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfo.cs
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.CoreCompileInputs.cache
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\refint\Piano test.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall_DryWetMidi_Native32.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall_DryWetMidi_Native64.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall_DryWetMidi_Native64.dylib
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.exe
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.deps.json
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.runtimeconfig.json
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.pdb
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall.DryWetMidi.dll
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.AssemblyReference.cache
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.Up2Date
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
+C:\Users\ihrom\Downloads\Piano\Piano\Piano-back\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall_DryWetMidi_Native32.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall_DryWetMidi_Native64.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall_DryWetMidi_Native64.dylib
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.exe
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.deps.json
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.runtimeconfig.json
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Piano test.pdb
+C:\Users\dt4\Downloads\Piano-back\Piano test\bin\Debug\net8.0-windows\Melanchall.DryWetMidi.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.AssemblyReference.cache
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano_test.Form1.resources
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.GenerateResource.cache
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfoInputs.cache
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.AssemblyInfo.cs
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.CoreCompileInputs.cache
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.csproj.Up2Date
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\refint\Piano test.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll

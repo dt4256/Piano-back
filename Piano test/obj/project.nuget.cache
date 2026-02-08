@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kACDoSiELLY=",
+  "dgSpecHash": "wOb6u6pUCtk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ihrom\\OneDrive\\Desktop\\chess\\Chess\\Piano test\\Piano test\\Piano test.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\dt4\\Downloads\\Piano-back\\Piano test\\Piano test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dt4\\.nuget\\packages\\melanchall.drywetmidi\\8.0.3\\melanchall.drywetmidi.8.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
