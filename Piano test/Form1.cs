@@ -12,18 +12,29 @@ using System.Threading;
 
 namespace Piano_test
 {
+
     public partial class Form1 : Form
     {
+        private OutputDevice? _midiDevice;
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                _midiDevice = OutputDevice.GetByName("DawPort");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка подключения к MIDI: {ex.Message}");
+            }
         }
 
         List<BTN> btns = new List<BTN>();
         private void Form1_Load(object sender, EventArgs e)
         {
             int tonestart = 2;
-            int xst = 100, yst = 100, dist =  0;
+            int xst = 100, yst = 100, dist = 0;
             string notes = "CDEFGAB";
             int[] statuses = { 1, 0, -1, 1, 0, 0, -1 };//главное начинать с до инициализацию
             for (int i = 0; i < 15; i++)
@@ -51,16 +62,16 @@ namespace Piano_test
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
 
-                for (int i = 0; i < btns.Count; i++)
+            for (int i = 0; i < btns.Count; i++)
+            {
+                if (btns[i].isInside(e.X, e.Y))
                 {
-                    if (btns[i].isInside(e.X, e.Y))
-                    {
-                        btns[i].change_pitchband(e.X);
-                        btns[i].Pressured = true;
-                        label1.Text = Convert.ToString(i) + btns[i].Note + Convert.ToString(btns[i].Pitchband);
-                    }
+                    btns[i].change_pitchband(e.X);
+                    btns[i].Pressured = true;
+                    label1.Text = Convert.ToString(i) + btns[i].Note + Convert.ToString(btns[i].Pitchband);
                 }
-           
+            }
+
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -77,7 +88,7 @@ namespace Piano_test
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            for(int i = 0; i < btns.Count; i++)
+            for (int i = 0; i < btns.Count; i++)
             {
                 btns[i].Pressured = false;
             }
@@ -85,14 +96,20 @@ namespace Piano_test
 
 
 
-       
+
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-            for(int i = 0;i< btns.Count; i++)
+            for (int i = 0; i < btns.Count; i++)
             {
                 if (btns[i].Pressured) btns[i].Pressured = false;
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            _midiDevice?.Dispose();
+            base.OnFormClosing(e);
         }
     }
 }

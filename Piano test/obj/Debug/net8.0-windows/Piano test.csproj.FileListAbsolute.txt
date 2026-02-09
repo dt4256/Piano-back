@@ -93,3 +93,4 @@ C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\refint\Pia
 C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.pdb
 C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.genruntimeconfig.cache
 C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\ref\Piano test.dll
+C:\Users\dt4\Downloads\Piano-back\Piano test\obj\Debug\net8.0-windows\Piano test.sourcelink.json

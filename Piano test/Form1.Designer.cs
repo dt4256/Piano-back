@@ -44,10 +44,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1472, 415);
+            ClientSize = new Size(1444, 415);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             Click += Form1_Click;
             Paint += Form1_Paint;
