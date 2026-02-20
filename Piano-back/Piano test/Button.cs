@@ -19,7 +19,19 @@ namespace Piano_test
         private int x, y;
         private int power = 127;
         private int width, height;
+        private int status = 0;
+        private int chanel = -1; //-1 значит неназначено
+        
 
+        public int Chanel { 
+            get { return chanel; }
+            set { chanel = value; }
+        }
+        public int Status
+        {
+            get { return status; }
+            set { status = value; }
+        }
         public bool Pressured
         {
             get { return pressured; }
@@ -36,6 +48,11 @@ namespace Piano_test
         public int Pitchband
         {
             get { return pitchband; }
+            set {  pitchband = value; }
+        }
+        public int Hight
+        {
+            get { return hight; }
         }
         public BTN(int x,int y, int hight, int config, char note)
         {
@@ -78,19 +95,6 @@ namespace Piano_test
         {
             pitchband = Map(x-this.x, 0, width, 0, 16383);
         }
-        public void Send_MIDI(BTN button_pr) 
-        {
-            var virtualPort = OutputDevice.GetByName("DawPort");
-            if (virtualPort != null)
-            {
-                
-                var bendEvent = new PitchBendEvent((ushort)button_pr.Pitchband);
-                //var noteEvent= new NoteEvent(button_pr.Note);
-                virtualPort.SendEvent(bendEvent);
-                virtualPort.Dispose(); // закрываем порт
-                
-            }
-
-        }
+        
     }
 }

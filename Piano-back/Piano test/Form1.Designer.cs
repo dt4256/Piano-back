@@ -34,23 +34,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(830, 495);
+            label1.Location = new Point(101, 365);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(38, 15);
             label1.TabIndex = 0;
             label1.Text = "label1";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< HEAD
-            ClientSize = new Size(1650, 553);
-=======
             ClientSize = new Size(1444, 415);
->>>>>>> 1a3eff0e228a5f016869d6025aade2a5d0c891a3
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             FormClosing += Form1_FormClosing;

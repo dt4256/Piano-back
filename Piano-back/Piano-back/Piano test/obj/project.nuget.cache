@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C3owb54BrCs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ihrom\\Downloads\\Telegram Desktop\\Piano-back_Tr1\\Piano-back\\Piano test\\Piano test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ihrom\\.nuget\\packages\\melanchall.drywetmidi\\8.0.3\\melanchall.drywetmidi.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
