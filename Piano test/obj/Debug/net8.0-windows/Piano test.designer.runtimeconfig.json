@@ -12,12 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\ihrom\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ihrom\\.nuget\\packages",
-      "G:\\vs2\\Создать папку (2)\\NuGetPackages"
+      "C:\\Users\\1\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\1\\.nuget\\packages"
     ],
     "configProperties": {
-      "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

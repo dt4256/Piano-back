@@ -54,6 +54,13 @@ namespace Piano_test
         {
             get { return hight; }
         }
+        public int X { 
+        get { return x; }
+        }
+        public int Y
+        {
+            get { return y; }
+        }
         public BTN(int x,int y, int hight, int config, char note)
         {
             this.x= x; this.y = y;
