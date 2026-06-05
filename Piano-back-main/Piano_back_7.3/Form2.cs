@@ -16,7 +16,6 @@ namespace Piano_back_7._3
         {
             InitializeComponent();
         }
-        public delegate void New_daw_name(object sender, DawEventArg e);
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -24,6 +23,11 @@ namespace Piano_back_7._3
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }

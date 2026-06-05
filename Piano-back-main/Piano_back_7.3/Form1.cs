@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Windows;
 using System.Windows.Input;
 using Piano_back_7._3;
+using System.Runtime.InteropServices;
 
 
 namespace Piano_test
@@ -26,6 +27,7 @@ namespace Piano_test
         private string port = "DawPort";
         private BTN activeBtn = null;
         public int chn = 0;
+
         public int getch()
         {
             int curr = chn;
@@ -48,7 +50,6 @@ namespace Piano_test
 
         List<BTN> btns = new List<BTN>();
         int number_of_channels = 1;
-        Dictionary<int, Touch> Toushes = new Dictionary<int, Touch>();
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -60,13 +61,14 @@ namespace Piano_test
             {
                 MessageBox.Show($"Ошибка подключения к MIDI: {ex.Message}");
             }
-            int tonestart = 2;
+            int tonestart = 62; // для высоты ноты
             int xst = 100, yst = 100, dist = 0;
             string notes = "CDEFGAB";
             int[] statuses = { 1, 0, -1, 1, 0, 0, -1 };//главное начинать с до инициализацию
             for (int i = 0; i < 15; i++)
             {
                 btns.Add(new BTN(xst, yst, tonestart + i, statuses[i % 7], notes[(i + 3) % 7]));
+                Console.WriteLine(btns[i]);
                 xst += btns[i].Width;
                 xst += dist;
             }
@@ -136,11 +138,11 @@ namespace Piano_test
                     activeBtn.Chanel = getch();
                     _midiDevice.SendEvent(new NoteOnEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel });
                     _midiDevice.SendEvent(new PitchBendEvent((ushort)activeBtn.Pitchband) { Channel = (FourBitNumber)activeBtn.Chanel });
-                    _midiDevice.SendEvent(new ControlChangeEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)100) { Channel = (FourBitNumber)activeBtn.Chanel });
                 }
             }
             if (number_of_channels == 2)
             {
+
 
             }
             }
@@ -170,7 +172,7 @@ namespace Piano_test
                     {
                         activeBtn.Pitchband = 8192;
                         _midiDevice.SendEvent(new NoteOffEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel });
-                        _midiDevice.SendEvent(new PitchBendEvent((ushort)activeBtn.Pitchband) { Channel = (FourBitNumber)activeBtn.Chanel });
+                        _midiDevice.SendEvent(new PitchBendEvent((ushort)(activeBtn.Pitchband)) { Channel = (FourBitNumber)activeBtn.Chanel });
                         activeBtn.Chanel = -1;
                     }
                     activeBtn = hovered;
@@ -185,13 +187,13 @@ namespace Piano_test
                     {
                         activeBtn.Chanel = getch();
 
-                        var noteOn = new NoteOnEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel };
+                        var noteOn = new NoteOnEvent((SevenBitNumber)(activeBtn.Hight), (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel };
                         _midiDevice.SendEvent(noteOn);
 
-                        var pitchBend = new PitchBendEvent((ushort)activeBtn.Pitchband) { Channel = (FourBitNumber)activeBtn.Chanel };
+                        var pitchBend = new PitchBendEvent((ushort)(activeBtn.Pitchband)) { Channel = (FourBitNumber)activeBtn.Chanel };
                         _midiDevice.SendEvent(pitchBend);
 
-                        var volume = new ControlChangeEvent((SevenBitNumber)activeBtn.Chanel, (SevenBitNumber)100) { Channel = (FourBitNumber)activeBtn.Chanel };
+                        var volume = new ControlChangeEvent((SevenBitNumber)(activeBtn.Chanel), (SevenBitNumber)100) { Channel = (FourBitNumber)activeBtn.Chanel };
                         _midiDevice.SendEvent(volume);
                     }
                     else
@@ -227,10 +229,16 @@ namespace Piano_test
                     btns[i].Pitchband = 8192;
                     if (btns[i].Chanel != -1)
                     {
+                        Console.WriteLine(Convert.ToString(i));
                         var noteOff = new NoteOffEvent((SevenBitNumber)btns[i].Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)btns[i].Chanel };
+                
+                        Console.WriteLine(noteOff);
                         _midiDevice.SendEvent(noteOff);
+                        Console.WriteLine("end");
+
                         var pitchBend = new PitchBendEvent((ushort)btns[i].Pitchband) { Channel = (FourBitNumber)btns[i].Chanel };
                         _midiDevice.SendEvent(pitchBend);
+
                     }
                     btns[i].Chanel = -1;
 
@@ -305,6 +313,31 @@ namespace Piano_test
         private void portToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           if (e.KeyChar == 'f') {
+                for (int i = 0; i < btns.Count; i++)
+                {
+                    btns[i].Pitchband = 8192;
+                    if (btns[i].Chanel != -1)
+                    {
+                        Console.WriteLine(Convert.ToString(i));
+                        var noteOff = new NoteOffEvent((SevenBitNumber)btns[i].Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)btns[i].Chanel };
+
+                        Console.WriteLine(noteOff);
+                        _midiDevice.SendEvent(noteOff);
+                        Console.WriteLine("end");
+
+                        var pitchBend = new PitchBendEvent((ushort)btns[i].Pitchband) { Channel = (FourBitNumber)btns[i].Chanel };
+                        _midiDevice.SendEvent(pitchBend);
+
+                    }
+                    btns[i].Chanel = -1;
+
+                }
+            }
         }
     }
 }

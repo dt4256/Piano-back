@@ -120,7 +120,7 @@
             this.renameToolStripMenuItem});
             this.dawToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dawToolStripMenuItem.Name = "dawToolStripMenuItem";
-            this.dawToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dawToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.dawToolStripMenuItem.Text = "DawPort";
             // 
             // renameToolStripMenuItem
@@ -128,8 +128,8 @@
             this.renameToolStripMenuItem.BackColor = System.Drawing.Color.DarkKhaki;
             this.renameToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
-            this.renameToolStripMenuItem.Text = "rename";
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.renameToolStripMenuItem.Text = "Chose new";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
             // 
             // Form1
@@ -142,13 +142,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Piano_back_7.3";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
