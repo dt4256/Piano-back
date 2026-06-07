@@ -49,6 +49,7 @@ C:\Users\1\Desktop\Piano-back\Piano-back-main (1)\Piano-back-main\Piano_back_7.3
 C:\Users\1\Desktop\Piano-back\Piano-back-main (1)\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.exe
 C:\Users\1\Desktop\Piano-back\Piano-back-main (1)\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.pdb
 C:\Users\1\Desktop\Piano-back\Piano-back-main (1)\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7._3.Form2.resources
+<<<<<<< HEAD
 C:\Users\dt4\Desktop\Fadeless keyboard\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall_DryWetMidi_Native32.dll
 C:\Users\dt4\Desktop\Fadeless keyboard\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall_DryWetMidi_Native64.dll
 C:\Users\dt4\Desktop\Fadeless keyboard\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall_DryWetMidi_Native64.dylib
@@ -85,3 +86,22 @@ C:\Users\ihrom\Desktop\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano
 C:\Users\ihrom\Desktop\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_ba.5668D400.Up2Date
 C:\Users\ihrom\Desktop\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.exe
 C:\Users\ihrom\Desktop\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.pdb
+=======
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall_DryWetMidi_Native32.dll
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall_DryWetMidi_Native64.dll
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall_DryWetMidi_Native64.dylib
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Piano_back_7.3.exe.config
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Piano_back_7.3.exe
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Piano_back_7.3.pdb
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall.DryWetMidi.dll
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\bin\Debug\Melanchall.DryWetMidi.xml
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_test.Form1.resources
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7._3.Form2.resources
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7._3.Properties.Resources.resources
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.csproj.GenerateResource.cache
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_ba.5668D400.Up2Date
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.exe
+C:\Users\1\Desktop\Piano-back\Piano-back\Piano-back-main\Piano_back_7.3\obj\Debug\Piano_back_7.3.pdb
+>>>>>>> a2cbec31c25199c0326b53286ce4ff293d028789
