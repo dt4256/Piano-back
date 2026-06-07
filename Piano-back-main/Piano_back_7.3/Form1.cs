@@ -297,9 +297,8 @@ namespace Piano_test
                 bt.Click += on_bt_click;
                 form_rename.Controls.Add(bt);
             }
-            
+
             form_rename.ShowDialog();
-            
 
         }
         private void on_bt_click(object sender, EventArgs e) 
