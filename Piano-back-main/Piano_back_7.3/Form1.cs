@@ -17,6 +17,7 @@ using System.Windows;
 using System.Windows.Input;
 using Piano_back_7._3;
 using System.Runtime.InteropServices;
+using System.IO.Ports;
 
 
 namespace Piano_test
@@ -27,7 +28,8 @@ namespace Piano_test
         private string port = "DawPort";
         private BTN activeBtn = null;
         public int chn = 0;
-
+        private SerialPort EspSerial;
+        private List<string> EspCommands = new List<string>();
         public int getch()
         {
             int curr = chn;
@@ -35,6 +37,48 @@ namespace Piano_test
             if (chn == 9) ++chn;
             return curr;
         }
+
+        private void btnConnectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (EspSerial != null && EspSerial.IsOpen)
+            {
+                EspSerial.Close();
+                EspSerial.Dispose();
+                lblStatus.Text = "Connect";
+                return;
+            }
+
+            try
+            {
+                EspSerial = new SerialPort(
+                    comboBoxPorts.SelectedItem.ToString(),
+                    baudRate: 115200,
+                    Parity.None, 8, StopBits.One
+                );
+                EspSerial.DataReceived += SerialPort_DataReceived;
+                EspSerial.Open();
+
+                lblStatus.Text = "Disconnect";
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка открытия порта: {ex.Message}");
+            }
+        }
+
+        private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            try
+            {
+                string line = EspSerial.ReadLine().Trim();
+                EspCommands.Add(line);
+            }
+            catch { }
+        }
+
+        
+
         private OutputDevice _midiDevice;
         public Form1()
         {
@@ -52,6 +96,23 @@ namespace Piano_test
         int number_of_channels = 1;
         private void Form1_Load(object sender, EventArgs e)
         {
+            try
+            {
+                comboBoxPorts.DropDownStyle = ComboBoxStyle.DropDownList;
+                string[] ports = SerialPort.GetPortNames();
+                comboBoxPorts.Items.AddRange(ports);
+                if (comboBoxPorts.Items.Count > 0)
+                    comboBoxPorts.SelectedIndex = 0;
+                else
+                {
+                    comboBoxPorts.Items.Add("No Com ports");
+                    comboBoxPorts.SelectedIndex = 0;
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Com port error: {ex.Message}");
+            }
             try
             {
                 _midiDevice = OutputDevice.GetByName(port);
@@ -259,6 +320,9 @@ namespace Piano_test
             {
                 _midiDevice?.Dispose();
             }
+            EspSerial?.Close();
+            EspSerial?.Dispose();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -339,5 +403,9 @@ namespace Piano_test
                 }
             }
         }
+
+       
+
+        
     }
 }
