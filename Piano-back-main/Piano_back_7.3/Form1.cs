@@ -44,7 +44,7 @@ namespace Piano_test
             {
                 EspSerial.Close();
                 EspSerial.Dispose();
-                lblStatus.Text = "Connect";
+                lblStatus.Text = "Disconnect";
                 return;
             }
 
@@ -58,7 +58,7 @@ namespace Piano_test
                 EspSerial.DataReceived += SerialPort_DataReceived;
                 EspSerial.Open();
 
-                lblStatus.Text = "Disconnect";
+                lblStatus.Text = "Connect";
                 
             }
             catch (Exception ex)
@@ -370,7 +370,7 @@ namespace Piano_test
             Button b1 = (Button)sender;
             port = b1.Text;
             _midiDevice = OutputDevice.GetByName(port);
-            _midiDevice.PrepareForEventsSending();
+            _midiDevice?.PrepareForEventsSending();
         }
 
         private void portToolStripMenuItem_Click(object sender, EventArgs e)
