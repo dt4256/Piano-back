@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\",
+  "WorkspaceRootPath": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|c:\\users\\ihrom\\desktop\\piano-back\\piano-back-main\\piano_back_7.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|c:\\users\\ihrom\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\piano-back\\piano-back-main\\piano_back_7.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|solutionrelative:piano_back_7.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\piano_back_7.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\piano_back_7.3\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|solutionrelative:piano_back_7.3\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\piano_back_7.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|solutionrelative:piano_back_7.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\piano_back_7.3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|solutionrelative:piano_back_7.3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\piano_back_7.3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B500B99D-BB57-4350-965B-5938FB9EBBF6}|Piano_back_7.3\\Piano_back_7.3.csproj|solutionrelative:piano_back_7.3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Button.cs",
+              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Button.cs",
+              "RelativeDocumentMoniker": "Piano_back_7.3\\Button.cs",
+              "ToolTip": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Button.cs",
+              "RelativeToolTip": "Piano_back_7.3\\Button.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAwGYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:44:21.486Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs",
               "RelativeDocumentMoniker": "Piano_back_7.3\\Form1.cs",
-              "ToolTip": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs",
+              "ToolTip": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs",
               "RelativeToolTip": "Piano_back_7.3\\Form1.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowFQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAALQBAAAAAAAAAAAowL8BAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-05T08:16:41.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs",
               "RelativeDocumentMoniker": "Piano_back_7.3\\Form1.cs",
-              "ToolTip": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\ihrom\\Desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form1.cs [Design]",
               "RelativeToolTip": "Piano_back_7.3\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T08:14:47.998Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form2.cs",
-              "RelativeDocumentMoniker": "Piano_back_7.3\\Form2.cs",
-              "ToolTip": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form2.cs",
-              "RelativeToolTip": "Piano_back_7.3\\Form2.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T08:16:10.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ihrom\\Desktop\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form2.cs",
-              "RelativeDocumentMoniker": "Piano_back_7.3\\Form2.cs",
-              "ToolTip": "C:\\Users\\dt4\\Desktop\\Fadeless keyboard\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\..\\..\\dt4\\Desktop\\Fadeless keyboard\\Piano-back\\Piano-back-main\\Piano_back_7.3\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T08:15:35.954Z"
+              "WhenOpened": "2026-06-05T08:14:47.998Z"
             }
           ]
         }
