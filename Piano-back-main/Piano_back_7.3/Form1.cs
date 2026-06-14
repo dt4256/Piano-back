@@ -25,7 +25,7 @@ namespace Piano_test
 
     public partial class Form1 : Form
     {
-        private string port = "DawPort";
+        private int chose = 0;
         private BTN activeBtn = null;
         public int chn = 0;
         private SerialPort EspSerial;
@@ -77,9 +77,9 @@ namespace Piano_test
             catch { }
         }
 
-        
 
-        private OutputDevice _midiDevice;
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -94,44 +94,59 @@ namespace Piano_test
 
         List<BTN> btns = new List<BTN>();
         int number_of_channels = 1;
+        List<OutputDevice> _midiDevices = new List<OutputDevice>();
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            try
+            this.Width = 1500;
+            this.Height = 400;
+
+            foreach (var device in OutputDevice.GetAll())
             {
-                comboBoxPorts.DropDownStyle = ComboBoxStyle.DropDownList;
-                string[] ports = SerialPort.GetPortNames();
-                comboBoxPorts.Items.AddRange(ports);
-                if (comboBoxPorts.Items.Count > 0)
-                    comboBoxPorts.SelectedIndex = 0;
-                else
+                _midiDevices.Add(device);
+                comboBox1.Items.Add(device.Name);
+                device.PrepareForEventsSending();
+            }
+
+            {
+                try
                 {
-                    comboBoxPorts.Items.Add("No Com ports");
-                    comboBoxPorts.SelectedIndex = 0;
+                    comboBoxPorts.DropDownStyle = ComboBoxStyle.DropDownList;
+                    string[] ports = SerialPort.GetPortNames();
+                    comboBoxPorts.Items.AddRange(ports);
+                    if (comboBoxPorts.Items.Count > 0)
+                        comboBoxPorts.SelectedIndex = 0;
+                    else
+                    {
+                        comboBoxPorts.Items.Add("No Com ports");
+                        comboBoxPorts.SelectedIndex = 0;
+                    }
                 }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show($"Com port error: {ex.Message}");
-            }
-            try
-            {
-                _midiDevice = OutputDevice.GetByName(port);
-                _midiDevice.PrepareForEventsSending();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка подключения к MIDI: {ex.Message}");
-            }
-            int tonestart = 62; // для высоты ноты
-            int xst = 100, yst = 100, dist = 0;
-            string notes = "CDEFGAB";
-            int[] statuses = { 1, 0, -1, 1, 0, 0, -1 };//главное начинать с до инициализацию
-            for (int i = 0; i < 15; i++)
-            {
-                btns.Add(new BTN(xst, yst, tonestart + i, statuses[i % 7], notes[(i + 3) % 7]));
-                Console.WriteLine(btns[i]);
-                xst += btns[i].Width;
-                xst += dist;
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Com port error: {ex.Message}");
+                }
+                try
+                {
+                    _midiDevices[chose].PrepareForEventsSending();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка подключения к MIDI: {ex.Message}");
+                }
+                int tonestart = 62; // для высоты ноты
+                int xst = 100, yst = 100, dist = 0;
+                string notes = "CDEFGAB";
+                int[] statuses = { 1, 0, -1, 1, 0, 0, -1 };//главное начинать с до инициализацию
+                for (int i = 0; i < 15; i++)
+                {
+                    btns.Add(new BTN(xst, yst, tonestart + i, statuses[i % 7], notes[(i + 3) % 7]));
+                    Console.WriteLine(btns[i]);
+                    xst += btns[i].Width;
+                    xst += dist;
+                }
+                comboBox1.Text = _midiDevices[chose].ToString();
             }
         }
 
@@ -197,8 +212,8 @@ namespace Piano_test
                 if (activeBtn.Chanel == -1)
                 {
                     activeBtn.Chanel = getch();
-                    _midiDevice.SendEvent(new NoteOnEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel });
-                    _midiDevice.SendEvent(new PitchBendEvent((ushort)activeBtn.Pitchband) { Channel = (FourBitNumber)activeBtn.Chanel });
+                    _midiDevices[chose].SendEvent(new NoteOnEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel });
+                    _midiDevices[chose].SendEvent(new PitchBendEvent((ushort)activeBtn.Pitchband) { Channel = (FourBitNumber)activeBtn.Chanel });
                 }
             }
             if (number_of_channels == 2)
@@ -232,8 +247,8 @@ namespace Piano_test
                     if (activeBtn != null)
                     {
                         activeBtn.Pitchband = 8192;
-                        _midiDevice.SendEvent(new NoteOffEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel });
-                        _midiDevice.SendEvent(new PitchBendEvent((ushort)(activeBtn.Pitchband)) { Channel = (FourBitNumber)activeBtn.Chanel });
+                        _midiDevices[chose].SendEvent(new NoteOffEvent((SevenBitNumber)activeBtn.Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel });
+                        _midiDevices[chose].SendEvent(new PitchBendEvent((ushort)(activeBtn.Pitchband)) { Channel = (FourBitNumber)activeBtn.Chanel });
                         activeBtn.Chanel = -1;
                     }
                     activeBtn = hovered;
@@ -249,18 +264,18 @@ namespace Piano_test
                         activeBtn.Chanel = getch();
 
                         var noteOn = new NoteOnEvent((SevenBitNumber)(activeBtn.Hight), (SevenBitNumber)127) { Channel = (FourBitNumber)activeBtn.Chanel };
-                        _midiDevice.SendEvent(noteOn);
+                        _midiDevices[chose].SendEvent(noteOn);
 
                         var pitchBend = new PitchBendEvent((ushort)(activeBtn.Pitchband)) { Channel = (FourBitNumber)activeBtn.Chanel };
-                        _midiDevice.SendEvent(pitchBend);
+                        _midiDevices[chose].SendEvent(pitchBend);
 
                         var volume = new ControlChangeEvent((SevenBitNumber)(activeBtn.Chanel), (SevenBitNumber)100) { Channel = (FourBitNumber)activeBtn.Chanel };
-                        _midiDevice.SendEvent(volume);
+                        _midiDevices[chose].SendEvent(volume);
                     }
                     else
                     {
                         var pitchBend = new PitchBendEvent((ushort)activeBtn.Pitchband) { Channel = (FourBitNumber)activeBtn.Chanel };
-                        _midiDevice.SendEvent(pitchBend);
+                        _midiDevices[chose].SendEvent(pitchBend);
                     }
                 }
             }
@@ -294,11 +309,11 @@ namespace Piano_test
                         var noteOff = new NoteOffEvent((SevenBitNumber)btns[i].Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)btns[i].Chanel };
                 
                         Console.WriteLine(noteOff);
-                        _midiDevice.SendEvent(noteOff);
+                        _midiDevices[chose].SendEvent(noteOff);
                         Console.WriteLine("end");
 
                         var pitchBend = new PitchBendEvent((ushort)btns[i].Pitchband) { Channel = (FourBitNumber)btns[i].Chanel };
-                        _midiDevice.SendEvent(pitchBend);
+                        _midiDevices[chose].SendEvent(pitchBend);
 
                     }
                     btns[i].Chanel = -1;
@@ -313,13 +328,11 @@ namespace Piano_test
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (number_of_channels == 1) {
-                _midiDevice?.Dispose();
+            var OutputDevices = OutputDevice.GetAll();
+            foreach (var Device in OutputDevices) { 
+                Device.Dispose();
             }
-            if (number_of_channels == 2)
-            {
-                _midiDevice?.Dispose();
-            }
+
             EspSerial?.Close();
             EspSerial?.Dispose();
 
@@ -337,7 +350,8 @@ namespace Piano_test
 
         private void twoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            number_of_channels = 2;
+            MessageBox.Show($"In development");
+
         }
 
         private void chanelsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -347,30 +361,11 @@ namespace Piano_test
 
         private void renameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form_rename = new Form2();
-            int x = 10, y = 10;
-            var inputDevices = InputDevice.GetAll();
-            List<string> names = new List<string>();
-            foreach (var device in inputDevices)
-            {
-                names.Add(device.Name);
-                Button bt = new Button();
-                bt.Text = device.Name;
-                bt.Location = new Point(x, y);
-                y += 30;
-                bt.Click += on_bt_click;
-                form_rename.Controls.Add(bt);
-            }
-
-            form_rename.ShowDialog();
-
+            
         }
         private void on_bt_click(object sender, EventArgs e) 
-        { 
-            Button b1 = (Button)sender;
-            port = b1.Text;
-            _midiDevice = OutputDevice.GetByName(port);
-            _midiDevice?.PrepareForEventsSending();
+        {
+            
         }
 
         private void portToolStripMenuItem_Click(object sender, EventArgs e)
@@ -380,31 +375,29 @@ namespace Piano_test
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-           if (e.KeyChar == 'f') {
-                for (int i = 0; i < btns.Count; i++)
-                {
-                    btns[i].Pitchband = 8192;
-                    if (btns[i].Chanel != -1)
-                    {
-                        Console.WriteLine(Convert.ToString(i));
-                        var noteOff = new NoteOffEvent((SevenBitNumber)btns[i].Hight, (SevenBitNumber)127) { Channel = (FourBitNumber)btns[i].Chanel };
-
-                        Console.WriteLine(noteOff);
-                        _midiDevice.SendEvent(noteOff);
-                        Console.WriteLine("end");
-
-                        var pitchBend = new PitchBendEvent((ushort)btns[i].Pitchband) { Channel = (FourBitNumber)btns[i].Chanel };
-                        _midiDevice.SendEvent(pitchBend);
-
-                    }
-                    btns[i].Chanel = -1;
-
-                }
-            }
+          
         }
 
-       
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cmb = (ComboBox)sender;
+            int selectedIndex = cmb.SelectedIndex;
+            chose = selectedIndex;
+        }
 
-        
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxPorts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
